@@ -11,10 +11,10 @@ function actualizarLista() {
       <span>${j}</span>
       <div>
         <button style="background:#28a745" onclick="renombrarJugador(${i})">
-          <span class="material-symbols-outlined">edit</span>
+          <img src="asterisk.png" alt="edit" style="display:block;margin:0 auto 1rem auto;max-width:100%;height:auto;">
         </button>
         <button style="background:#dc3545" onclick="eliminarJugador(${i})">
-          <span class="material-symbols-outlined">delete</span>
+          <img src="minus.png" alt="borrar" style="display:block;margin:0 auto 1rem auto;max-width:100%;height:auto;">
         </button>
       </div>
     `;
