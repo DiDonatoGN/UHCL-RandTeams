@@ -30,14 +30,14 @@ input, select, button {
 }
 button {
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #14532d;
   color: white;
   border: none;
   margin-top: 0.8rem;
   transition: background 0.2s;
 }
 button:hover {
-  background-color: #0056b3;
+  background-color: #166534;
 }
 ul {
   list-style: none;
