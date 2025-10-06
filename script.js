@@ -5,11 +5,17 @@ function actualizarLista() {
   lista.innerHTML = '';
   jugadores.forEach((j, i) => {
     const li = document.createElement('li');
+    // Usamos <span> con las clases 'material-symbols-outlined' y el nombre del ícono.
+    // 'material-symbols-outlined' asume que has enlazado correctamente la fuente en tu HTML.
     li.innerHTML = `
       <span>${j}</span>
       <div>
-        <button style="background:#28a745" onclick="renombrarJugador(${i})">✎</button>
-        <button style="background:#dc3545" onclick="eliminarJugador(${i})">🗑</button>
+        <button style="background:#28a745" onclick="renombrarJugador(${i})">
+          <span class="material-symbols-outlined">edit</span>
+        </button>
+        <button style="background:#dc3545" onclick="eliminarJugador(${i})">
+          <span class="material-symbols-outlined">delete</span>
+        </button>
       </div>
     `;
     lista.appendChild(li);
